@@ -1,31 +1,31 @@
-
+/*
 @font-face {
   font-family: "Rene Bieder";
-  src: url("../fonts/rene-bieder-quadon-medium.otf");
-  font-weight: "medium";
+  src: url("../fonts/rene-bieder-quadon-heavy.otf");
+  font-weight: 900;
 }
 @font-face {
   font-family: "Rene Bieder";
-  src: url("../fonts/rene-bieder-quadon-medium.otf");
-  font-weight: "medium";
+  src: url("../fonts/rene-bieder-quadon-black.otf");
+  font-weight: "bolder";
 }
 @font-face {
   font-family: "Rene Bieder";
-  src: url("../fonts/rene-bieder-quadon-medium.otf");
-  font-weight: "medium";
-}
+  src: url("../fonts/rene-bieder-quadon-bold.otf");
+  font-weight: "bold";
+}*/
 @font-face {
   font-family: "Rene Bieder";
   src: url("../fonts/rene-bieder-quadon-medium.otf");
-  font-weight: "medium";
+  font-weight: "normal";
+}
+/*@font-face {
+  font-family: "Rene Bieder";
+  src: url("../fonts/rene-bieder-quadon-light.otf");
+  font-weight: "lighter";
 }
 @font-face {
   font-family: "Rene Bieder";
-  src: url("../fonts/rene-bieder-quadon-medium.otf");
-  font-weight: "medium";
-}
-@font-face {
-  font-family: "Rene Bieder";
-  src: url("../fonts/rene-bieder-quadon-medium.otf");
-  font-weight: "medium";
-}
+  src: url("../fonts/rene-bieder-quadon-thin.otf");
+  font-weight: 100;
+}*/
