@@ -56,26 +56,6 @@
 }
 
 
-/* MENU */
-#menu {
-  text-align: center;
-  font-family: "Rene Bieder", verdana, arial, sans-serif;
-  cursor: default;
-}
-  #menu li {
-    display: inline-block;
-  }
-    #menu li a,
-    #menu li a:visited {
-      padding: 0 10px;
-      line-height: 40px;
-      color: white;
-      text-decoration: none;
-      text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
-    }
-    #menu li a:hover { color: #eee; }
-
-
 /* MENU SOCIAL */
 #social {
   position: absolute;
@@ -96,21 +76,44 @@
   #social a[twitter] { background: url("../images/social-twitter.png"); }
 
 
+/* MENU */
+#menu {
+  text-align: center;
+  font-family: "Rene Bieder", verdana, arial, sans-serif;
+  cursor: default;
+}
+  #menu li {
+    display: inline-block;
+  }
+    #menu li a,
+    #menu li a:visited {
+      padding: 0 10px;
+      line-height: 40px;
+      color: white;
+      text-decoration: none;
+      text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+    }
+    #menu li a:hover { color: #eee; }
+
+
 /* CONTAINER */
 #container {
   box-shadow: 5px 0px 10px -5px rgba(0, 0, 0, 0.5);
 }
 
-#dump-start {
+header:before {
+  content: "";
+  display: block;
+  visibility: visible;
   height: 160px;
   background-color: white;
 }
 
 article {
-  height: 500px;
   padding: 40px 0 80px;
   background-color: white;
 }
+
   article > .grid-10 {
     background-color: #ddd;
   }
