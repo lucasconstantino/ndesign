@@ -1,4 +1,38 @@
 
+/* WRAPPER */
+#wrapper {
+  min-height: 100%;
+}
+
+/* NAVIGATION BAR */
 #nav-bar {
+  position: fixed;
+  height: 40px;
+  padding: 0 25px;
+  margin-left: -25px;
+  top: 40px;
+
   background-color: #424144;
 }
+
+/* MENU */
+#menu {
+  text-align: center;
+}
+  #menu li {
+    display: inline-block;
+  }
+
+/* CONTAINER */
+#container {
+  box-shadow: 5px 0px 10px -5px rgba(0, 0, 0, 0.5);
+  background-color: #f9f9f9;
+}
+
+article {
+  padding: 40px 0;
+  background-color: #eee;
+}
+  article > .grid-10 {
+    background-color: #ddd;
+  }
