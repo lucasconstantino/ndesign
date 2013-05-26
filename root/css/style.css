@@ -114,6 +114,6 @@ article {
   background-color: white;
 }
 
-  article > .grid-10 {
+  article .content {
     background-color: #ddd;
   }
