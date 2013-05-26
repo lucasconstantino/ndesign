@@ -7,10 +7,12 @@
   z-index: -1;
 }
 
+
 /* WRAPPER */
 #wrapper {
   min-height: 100%;
 }
+
 
 /* NAVIGATION BAR */
 #nav-bar {
@@ -43,19 +45,56 @@
     right: 0;
   }
 
+#nav-home-icon {
+  position: absolute;
+  display: block;
+  margin: 8px 0;
+  height: 24px;
+  width: 24px;
+  left: 80px;
+  background-image: url("../images/bar-logo.png");
+}
+
+
 /* MENU */
 #menu {
   text-align: center;
+  font-family: "Rene Bieder", verdana, arial, sans-serif;
+  cursor: default;
 }
   #menu li {
     display: inline-block;
   }
-    #menu li a {
+    #menu li a,
+    #menu li a:visited {
       padding: 0 10px;
       line-height: 40px;
       color: white;
       text-decoration: none;
+      text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
     }
+    #menu li a:hover { color: #eee; }
+
+
+/* MENU SOCIAL */
+#social {
+  position: absolute;
+  right: 80px;
+  top: 0;
+}
+  #social li {
+    display: block;
+    float: right;
+  }
+  #social li a {
+    display: block;
+    height: 24px;
+    width: 24px;
+    margin: 8px;
+  }
+  #social a[facebook] { background: url("../images/social-facebook.png"); }
+  #social a[twitter] { background: url("../images/social-twitter.png"); }
+
 
 /* CONTAINER */
 #container {
