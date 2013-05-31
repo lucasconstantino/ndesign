@@ -15,20 +15,29 @@
 
   <!-- JavaScript Libraries -->
   <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-
+  <script src="js/lib/jquery-ui/jquery-ui-custom.min.js" defer></script>
+  <script src="js/lib/jquery-viewport/jquery.viewport.min.js" defer></script>
+  <script src="js/lib/jquery-mousewheel/jquery.mousewheel.js" defer></script>
+  
   <!-- Custom JavaScript -->
-  <script src="js/script.js"></script>
+  <script src="js/section-spacing.js" defer></script>
+  <script src="js/navigation.js" defer></script>
+  <script src="js/contact-form.js" defer></script>
 </head>
 <body>
-  <img id="background" src="images/espaco_individuall.jpg">
+  <div id="bg-wrapper">
+    <img src="images/espaco_individuall.jpg">
+    <img src="images/espaco_astrologico.jpg">
+    <img src="images/espaco_coletivo.jpg">
+    <img src="images/espaco_geografico.jpg">
+    <img src="images/espaco_temporal2.jpg">
+  </div>
 
   <div id="wrapper" class="container-12">
 
     <nav id="nav-bar" class="container-12">
       <div id="nav-container" class="container-12">
-        <a href="#home" title="Ir para o início" id="nav-home-icon">
-        	
-        </a>
+        <a href="#home" title="Ir para o início" id="nav-home-icon"></a>
 
         <ul id="social">
           <li><a href="https://www.facebook.com/NFloripa2014" title="Visite nossa página no Facebook" facebook></a></li>
@@ -39,19 +48,22 @@
           <li><a href="#project" title="O Projeto">O Projeto</a></li>
           <li><a href="#organization" title="Organização">Organização</a></li>
           <li><a href="#videos" title="Videos">Videos</a></li>
-          <li><a href="#contact" title="Contato">Contato</a></li>
+          <!--<li><a href="#contact" title="Contato">Contato</a></li>-->
         </ul>
       </div>
     </nav>
 
     <div id="container" class="container-12">
 
+      <div id="first-spacing" class="spacing"></div>
       <section id="home">
         <header>
           <img src="images/homeimg.png" alt="">
         </header>
         <article class="prefix-1 suffix-1 clearfix"></article>
       </section>
+
+      <div class="spacing"></div>
 
       <section id="project">
         <header>
@@ -69,6 +81,8 @@
           </div>
         </article>
       </section>
+
+      <div class="spacing"></div>
 
       <section id="organization">
         <header>
@@ -148,6 +162,8 @@
         </article>
       </section>
 
+      <div class="spacing"></div>
+
       <section id="videos">
         <header>
           <img src="images/video.png" alt="">
@@ -161,22 +177,63 @@
         </article>
       </section>
 
+      <div class="spacing"></div>
+
+      <!--
       <section id="contact">
         <header>
           <img src="images/contato.png" alt="">
         </header>
-        <article class="prefix-1 suffix-1 clearfix">
-          <div class="grid-7 content">
-            <iframe src="https://docs.google.com/a/nfloripa2014.com/spreadsheet/embeddedform?formkey=dGlOSWJvekV0ZVdTNDlsajVMeGtHQ2c6MQ" width="560" height="723" frameborder="0" marginheight="0" marginwidth="0">
-            	Carregando...
-            </iframe>
-          </div>
-          <div>
-          	Icons
+        <article class="prefix-3 suffix-3 clearfix">
+          <div class="grid-6 content">
+
+            <form id="contact-form" action="https://spreadsheets1.google.com/formResponse">
+              <input type="hidden" name="formkey" value="dGlOSWJvekV0ZVdTNDlsajVMeGtHQ2c6MQ">
+
+              <div>
+                <label>
+                  <span>Nome</span>
+                  <input type="text" name="entry.0.single" value="" placeholder="" required>
+                </label>
+              </div>
+
+              <div>
+                <label>
+                  <span>Cidade</span>
+                  <input type="text" name="entry.3.single" value="" placeholder="">
+                </label>
+              </div>
+
+              <div>
+                <label>
+                  <span>E-mail</span>
+                  <input type="text" name="entry.1.single" value="" placeholder="" required>
+                </label>
+              </div>
+
+              <div>
+                <label>
+                  <span>Mensagem</span>
+                  <textarea name="entry.2.single" required></textarea>
+                </label>
+              </div>
+
+              <div>
+                <input type="submit" name="submit" value="Enviar">
+              </div>
+            </form>
+
+            <div id="sent-form">
+              <p>Obrigado por entrar em contato conosco!</p>
+              <p>Responderemos em breve...</p>
+            </div>
+
           </div>
         </article>
       </section>
 
+      <div class="spacing"></div>
+      -->
     </div>
   </div>
 </body>
