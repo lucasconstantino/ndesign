@@ -1,2 +1,46 @@
 
 /* SECTION STYLES */
+
+#nav-bar a:hover {
+	opacity: 0.7;
+}
+
+/* Tirar o hover do outro css */
+
+
+
+
+/* organização */
+
+#organization > article > div {
+	background-image: url('../images/table-bg.png');
+	background-repeat: no-repeat;
+	height: 424px;
+}
+
+#organization table {
+	color: white;
+	font-family: "Rene Bieder", verdana, arial, sans-serif;
+	width: 780px;
+}
+
+	#organization table td {
+		padding: 2px;
+		text-align: center;
+	}
+	
+		#table-header {
+			height: 75px;
+		}
+		
+			.cell h3 {
+				background-color: #939597;
+				height: 48px;
+			}
+		
+			.cell-description p {
+				background-color: #bbbdc0;
+				height: 48px;
+			}
+
+/* END organização */
